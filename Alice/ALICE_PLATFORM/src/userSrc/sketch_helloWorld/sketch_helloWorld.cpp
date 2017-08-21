@@ -19,6 +19,7 @@ using namespace std::experimental;
 
 
 vec A(5, 0, 0);
+list<vec> A_pts;
 
 void setup()
 {
@@ -49,7 +50,12 @@ void draw()
 	vec Anew = A + tangent;
 	A = Anew;
 
-	drawPoint(A);
+	A_pts.push_back(A);
+
+	for (auto pt : A_pts)
+	{
+		drawPoint(pt);
+	};
 
 }
 
