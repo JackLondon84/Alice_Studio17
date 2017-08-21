@@ -40,7 +40,17 @@ void draw()
 	backGround(0.75);
 	drawGrid(20);
 
-	
+	float radius = 10;
+	for (float param = 0.0; param < 2.0; param += 0.1)
+	{
+		float x = radius* cos(PI *param);
+		float y = radius* sin(PI *param);
+		drawPoint(vec(x, y, 0));
+
+		// Move the circle from the origin
+		//x += 10;
+		//y += 10;
+	}
 
 	
 }
