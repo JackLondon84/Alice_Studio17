@@ -20,6 +20,7 @@ using namespace std::experimental;
 
 vec A(5, 0, 0);
 list<vec> A_pts;
+float inc = 0.005;
 
 void setup()
 {
@@ -49,8 +50,15 @@ void draw()
 	tangent.y = A.x * -0.01;
 	vec Anew = A + tangent;
 	A = Anew;
+	int num_of_pts = A_pts.size();
+	if (num_of_pts % 10 == 0) {
+		inc = inc * -1.0;
+	}
+
+	A = A *(1.0 + inc);
 
 	A_pts.push_back(A);
+
 
 	for (auto pt : A_pts)
 	{

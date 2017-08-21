@@ -1,9 +1,9 @@
 ﻿  sketch_helloWorld.cpp
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(C:\Users\Vishal\Desktop\Utzon(x)\Shajay\Alice_Studio17\Alice\ALICE_PLATFORM\x64\Release\ALICE_PLATFORM.exe) no coincide con el valor de la propiedad OutputFile de Linker (C:\Users\Vishal\Desktop\Utzon(x)\Shajay\Alice_Studio17\Alice\ALICE_PLATFORM\x64\Release\EXE\ALICE_PLATFORM.exe). Esto puede hacer que el proyecto no se compile correctamente. Para solucionar este problema, asegúrese de que los valores de propiedad $(OutDir), $(TargetName) y $(TargetExt) coinciden con el valor especificado en %(Link.OutputFile).
   Generando código
-  75 of 337 functions (22.3%) were compiled, the rest were copied from previous compilation.
-    51 functions were new in current compilation
-    14 functions had inline decision re-evaluated but remain unchanged
+  9 of 341 functions ( 2.6%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   ALICE.vcxproj -> C:\Users\Vishal\Desktop\Utzon(x)\Shajay\Alice_Studio17\Alice\ALICE_PLATFORM\x64\Release\ALICE_PLATFORM.exe
   ALICE.vcxproj -> C:\Users\Vishal\Desktop\Utzon(x)\Shajay\Alice_Studio17\Alice\ALICE_PLATFORM\x64\Release\ALICE_PLATFORM.pdb (Full PDB)
