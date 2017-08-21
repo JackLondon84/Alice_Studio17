@@ -18,7 +18,7 @@ using namespace std::experimental;
 /////////////////////////// model  ///////////////////////////////////////////
 
 
-
+vec A(5, 0, 0);
 
 void setup()
 {
@@ -36,23 +36,21 @@ void update(int value)
 void draw()
 {
 
-
 	backGround(0.75);
 	drawGrid(20);
 
-	float radius = 10;
-	for (float param = 0.0; param < 2.0; param += 0.1)
-	{
-		float x = radius* cos(PI *param);
-		float y = radius* sin(PI *param);
-		drawPoint(vec(x, y, 0));
+	vec tangent;
+	// Random path
+	//tangent.x = ofRandom(-0.5, 0.5);
+	//tangent.y = ofRandom(-0.5, 0.5);
 
-		// Move the circle from the origin
-		//x += 10;
-		//y += 10;
-	}
+	tangent.x = A.y * 0.01;
+	tangent.y = A.x * -0.01;
+	vec Anew = A + tangent;
+	A = Anew;
 
-	
+	drawPoint(A);
+
 }
 
 /////////////////////////// control  ///////////////////////////////////////////
